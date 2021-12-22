@@ -19,6 +19,7 @@ func main() {
 	user := &User{ID: 1}
 	profile := &Profile{ID: 1, UserID: 1}
 
+	//You can define rules for the gate in a separate file and call it from here.
 	g.Define("access-profile", func(args ...interface{}) bool {
 		user := *args[0].(*User)
 		profile := *args[1].(*Profile)
