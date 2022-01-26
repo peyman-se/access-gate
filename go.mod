@@ -1,3 +1,3 @@
-module github.com/peyman-se/access-gate
+module github.com/peyman-se/gate
 
 go 1.17
